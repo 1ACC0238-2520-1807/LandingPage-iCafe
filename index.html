@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCafe - Organiza tu cafetería</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de Font Awesome para el pie de página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts para un estilo similar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ======== CABECERA Y NAVEGACIÓN ======== -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="img/logoblanco.png" alt="Logo de iCafe">
+                iCafe
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======== SECCIÓN HERO (INICIO) ======== -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Tu cafetería, más organizada que nunca.</h1>
+                <p>UNA SOLUCIÓN DISEÑADA PARA DUEÑOS DE CAFETERÍAS QUE BUSCAN OPTIMIZAR INVENTARIOS, VENTAS Y COSTOS EN UN SOLO LUGAR.</p>
+                <a href="#contacto" class="btn">Solicitar una demo &rarr;</a>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN SERVICIOS ======== -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>SERVICIOS</h2>
+                <p class="section-subtitle">Administra tu café de forma fácil, rápida y digital.</p>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                        <h3>PROVEEDORES</h3>
+                        <ul>
+                            <li>ORGANIZACIÓN DE PROVEEDORES</li>
+                            <li>CONTACTAR DE FORMA FÁCIL</li>
+                            <li>ENCONTRARLOS POR CATEGORIA</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                        <h3>INVENTARIO</h3>
+                        <ul>
+                            <li>CONTROL AUTOMÁTICO DE INSUMOS</li>
+                            <li>ALERTAS DE STOCK BAJO</li>
+                            <li>HISTORIAL DE ENTRADAS Y SALIDAS</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                        <h3>GESTIÓN COSTOS</h3>
+                        <ul>
+                            <li>REGISTRO DE VENTAS DIARIAS</li>
+                            <li>REPORTES CLAROS DE INGRESOS Y GASTOS</li>
+                            <li>HERRAMIENTAS PARA CÁLCULO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN SOBRE NOSOTROS ======== -->
+        <section id="nosotros" class="about">
+            
+            <!-- Título fuera del container para que la barra verde sea de ancho completo -->
+            <h2 class="section-title">SOBRE NOSOTROS</h2>
+
+            <!-- Un container específico para el contenido de esta sección -->
+            <div class="container about-container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Nuestra Misión</h3>
+                        <p>Brindar a los dueños de cafeterías una herramienta digital sencilla y eficiente que les permita optimizar la administración de su negocio, reducir pérdidas y mejorar la toma de decisiones, facilitando su crecimiento y sostenibilidad.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/cafe2.jpg" alt="cafe2">
+                    </div>
+                    <div class="about-image">
+                        <img src="img/cafeteria2.png" alt="cafe2">
+                    </div>
+                    <div class="about-text">
+                        <h3>Nuestra Visión</h3>
+                        <p>Ser la plataforma líder en soluciones tecnológicas para cafeterías en Latinoamérica, impulsando la digitalización de pequeños y medianos negocios de café y contribuyendo a la creación de experiencias más organizadas, rentables y sostenibles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN CONTACTO ======== -->
+        <section id="contacto" class="contact">
+            
+            <!-- Título dentro de su propia barra de color -->
+            <h2 class="section-title">CONTACTO</h2>
+
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>¡Estamos a un mensaje de distancia!</h2>
+                        <p>Déjanos tus datos, nuestro equipo se pondrá en contacto contigo enseguida.</p>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                            <input type="email" name="correo" placeholder="Correo electrónico" required>
+                            <input type="tel" name="telefono" placeholder="Teléfono">
+                            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <button type="submit" class="btn">ENVIAR MENSAJE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== PIE DE PÁGINA ======== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>iCafe</h3>
+                <p>Menos tiempo en papeleo, más tiempo para tus clientes.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Siguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
