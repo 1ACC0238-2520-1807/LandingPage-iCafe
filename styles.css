@@ -1,7 +1,4 @@
-/* ===================================================================
-   ARCHIVO DE ESTILOS COMPLETO PARA iCafe
-   Versión final con fondo de Contacto a ancho completo.
-   =================================================================== */
+
 
 /* ======== 1. ESTILOS GLOBALES Y PALETA DE COLORES ======== */
 :root {
@@ -80,7 +77,6 @@ h3 { font-size: 1.5rem; }
     overflow: hidden;
 }
 
-/* LA CAPA DE IMAGEN AHORA SE APLICA A TODA LA SECCIÓN */
 .contact::before {
     content: '';
     position: absolute;
@@ -93,27 +89,24 @@ h3 { font-size: 1.5rem; }
     z-index: 0;
 }
 
-/* La barra de título ahora tiene un fondo semitransparente para que la imagen se vea detrás */
+
 .contact .section-title {
-    background-color:var(--color-header); /* Usamos el color --color-header pero con transparencia */
+    background-color:var(--color-header);
     color: var(--color-text-light);
     padding: 1.5rem 0;
     margin-bottom: 0;
     font-size: 2rem;
-    position: relative; /* Para que esté por encima de la capa ::before */
+    position: relative; 
     z-index: 1;
 }
 
-/* El contenedor principal sigue centrando el contenido */
 .contact .container {
     padding-top: 6rem;
     padding-bottom: 6rem;
     position: relative;
     z-index: 1;
-    /* Ya no necesita fondo, lo hereda de la sección principal */
 }
 
-/* La rejilla no necesita cambios */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,7 +115,7 @@ h3 { font-size: 1.5rem; }
 }
 
 .contact-info { color: var(--color-text-light); }
-.contact-info h2 { font-size: 3rem; color: var(--color-text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para legibilidad */ }
+.contact-info h2 { font-size: 3rem; color: var(--color-text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.5);  }
 .contact-info p { text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para legibilidad */ }
 .contact-form form { display: flex; flex-direction: column; }
 .contact-form input, .contact-form textarea { width: 100%; padding: 1rem; margin-bottom: 1rem; border: none; border-radius: 25px; background-color: var(--color-text-light); font-family: var(--font-primary); }
@@ -166,4 +159,5 @@ h3 { font-size: 1.5rem; }
     
     .footer { text-align: center; }
     .footer-col { margin-bottom: 2rem; }
+
 }
